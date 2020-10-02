@@ -24,7 +24,7 @@ const num2 = 20;
 
 const sum = num1 + num2;
 
-let sum = 10 + 20;
+let sum0 = 10 + 20;
 
 /* Ex.C 
     Create a variable random that contains a random number between 0 and 20 (should be randomly created at each execution)
