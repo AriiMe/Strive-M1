@@ -199,15 +199,10 @@ console.log("The three dice's you rolled are: ", dieroll());
    Write the function HowManyDays that receives a Date and return the number of days that has passed since that day.
 */
 
-const HowManyDays = (date) => {
-  const today = new Date().getTime();
-
-  return parseInt((today - dateTime) / (24 * 3600 * 1000));
-};
-
 /* Ex.10
    Write the function IsTodayMyBDay that returns true if it's your birthday, false otherwise
 */
+/*
 Age = function () {
   var e, o;
   return (
@@ -232,7 +227,14 @@ Age = function () {
     }
   );
 };
-
+*/
+const IsTodayMyBDay = (bday) => {
+  return (
+    new Date().getMonth() === new Date(bday).getMonth() &&
+    new Date().getDate() === new Date(bday).getDate()
+  );
+};
+console.log(IsTodayMyBDay());
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of the file
 
@@ -280,6 +282,14 @@ const GetMovieById = (id) => movies.filter((movie) => movie.imdbID === id);
 /* Ex.17
     Write the function SumYears that returns the sum of the years the movie has been produced
 */
+const SumYears = () => {
+  const movieYears = [];
+  movies.forEach((movie) => {
+    movieYears.push(parseInt(movie.Year));
+  });
+
+  return movieYears.reduce((one, two) => one + two);
+};
 
 /* Ex.18
     Write the function SearchMovie that receives a string and returns all the movies with that string in the title
@@ -290,7 +300,15 @@ function SearchMovie(s) {
 /* Ex.19
     Write the function SearchAndDivide that receives a string and returns an object with an array "match" with all the movies that contains the title and another array "nonMatch" with the other movies
 */
+const SearchAndDivide = (s) => {
+  let matchArray = movies.filter((movie) => movie.Title.includes(s));
+  let nonMatchArray = movies.filter((movie) => !movie.Title.includes(s));
 
+  return {
+    matchArray,
+    nonMatchArray,
+  };
+};
 /* Ex.20
    Write the function DeleteX that receives a number and returns an array without the element in that position
 */
