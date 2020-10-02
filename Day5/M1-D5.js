@@ -24,13 +24,15 @@ const num2 = 20;
 
 const sum = num1 + num2;
 
+let sum = 10 + 20;
+
 /* Ex.C 
     Create a variable random that contains a random number between 0 and 20 (should be randomly created at each execution)
 */
 
 let giveMeRandom = Math.floor(Math.random() * 20 + 0);
 console.log("Your random number is :", giveMeRandom);
-
+let randomVar = Math.floor(Math.random() * 20 + 1);
 /* Ex.D
     Create a variable Me containing and object with the current information: Name = Your Name, Surname = Your Surname, Age = Your Age
 */
