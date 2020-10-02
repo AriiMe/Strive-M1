@@ -186,19 +186,15 @@ console.log(WhatDayIsIt());
         values: [ 3, 3, 4]
     }
 */
-/*
-const RollTheDices = (x) => {
-  let results = [];
-  for (let i = 0; i <= x; i++) {
-    results.push(dice());
+
+function dieroll() {
+  var result = [];
+  for (var i = 0; i < 3; i++) {
+    result.push(Math.floor(Math.random() * 6 + 1));
   }
-
-  return results.reduce((a, b) => a + b);
-};
-
-console.log(RollTheDices(dice));
-*/
-
+  return result;
+}
+console.log(dieroll());
 /* Ex.9
    Write the function HowManyDays that receives a Date and return the number of days that has passed since that day.
 */
