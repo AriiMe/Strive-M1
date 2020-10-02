@@ -194,7 +194,7 @@ function dieroll() {
   }
   return result;
 }
-console.log(dieroll());
+console.log("The three dice's you rolled are: ", dieroll());
 /* Ex.9
    Write the function HowManyDays that receives a Date and return the number of days that has passed since that day.
 */
@@ -294,6 +294,24 @@ function SearchMovie(s) {
 /* Ex.20
    Write the function DeleteX that receives a number and returns an array without the element in that position
 */
+const arra = [0, 1, 2, 3, 4, 5];
+
+const DeleteX = (x) => {
+  arra.splice(x, 1);
+  return arra;
+};
+console.log(DeleteX());
+
+//removes random number from array
+function popRandom(arra1) {
+  let i = (Math.random() * arra1.length) | 0;
+  return arra1.splice(i, 1)[0];
+}
+
+let arra1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+console.log(popRandom(arra1));
+console.log(arra1);
 
 // JS Advanced
 
