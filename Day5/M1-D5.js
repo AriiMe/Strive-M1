@@ -20,7 +20,7 @@ let test = "Sup";
     Create a variable sum that contains the result of the sum between 10 and 20 
 */
 const num1 = 10;
-const num2 = 5;
+const num2 = 20;
 
 const sum = num1 + num2;
 
