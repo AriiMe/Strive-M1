@@ -187,17 +187,27 @@ console.log(WhatDayIsIt());
     }
 */
 
-function dieroll() {
+function RollTheDices() {
   var result = [];
   for (var i = 0; i < 3; i++) {
     result.push(Math.floor(Math.random() * 6 + 1));
   }
   return result;
 }
-console.log("The three dice's you rolled are: ", dieroll());
+console.log("The three dice's you rolled are: ", RollTheDices());
 /* Ex.9
    Write the function HowManyDays that receives a Date and return the number of days that has passed since that day.
 */
+
+const HowManyDays = (date) => {
+  //I'm formatting the dates to make them equals. .getTime method return the date in milliseconds
+  const today = new Date().getTime();
+  const dateTime = new Date(date).getTime();
+
+  //after formatting the dates in milliseconds, I can make a difference between those two and I can traslate the difference in # of days. ParseInt is to round the number and get an integer.
+  return parseInt((today - dateTime) / (24 * 3600 * 1000));
+};
+console.log(HowManyDays(05 / 05 / 2019), "Days passed");
 
 /* Ex.10
    Write the function IsTodayMyBDay that returns true if it's your birthday, false otherwise
