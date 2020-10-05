@@ -5,71 +5,17 @@
         No shopping cart / checkout features are required.
         EX1.:
         Add H1 title with the name of the shop
-        <h1>stuff</h1>
         EX2.: 
-        <title>Strivezon</title>
         Add a TABLE with the top 5 products of the shop
         EX3.: 
-<table style="width:100%">
-  <h2>Products</h2>
-  <tr>
-    <th>Title</th>
-    <th>Image</th>
-    <th>Price</th>
-    <th>Description</th>
-    <td>Link</td>
-  </tr>
-    <td>Banana</td>
-    <td><img src="https://i.kym-cdn.com/photos/images/original/001/170/759/7c9.gif" alt="banana"></td>
-    <td>$299</td>
-    <td>newly genetically modified banana <br>Buy it now link below</td>
-    <td><a href="https://www.amazon.de/Nintendo-Mocchi-Pl%C3%BCsch-Spielzeug-Kissen/dp/B07D9S9B7N/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=banan&qid=1601903245&sr=8-4" target="_blank">Banan!</a></td>
-  </tr>
-  <tr>
-    <td>Strawberry</td>
-    <td><img src="https://i.redd.it/gfy0tcjrq9s21.jpg" alt="srs"></td>
-    <td>$29,99</td>
-    <td>A cool Strawberry<br>Buy it now link below</td>
-    <td><a href="https://www.amazon.de/Riot-Squad-Strawberry-Watercannon-Aroma/dp/B07YCXC4NK/ref=sr_1_20?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=strawberry&qid=1601903342&sr=8-20" target="_blank">berry!</a> </td>
-  </tr>
-  <tr> 
-    <td>Blueberry</td>
-    <td><img src="url" alt="alternatetext"></td>
-    <td>$19</td>
-    <td><br>Buy it now link below</td>
-    <td><a href="https://www.w3schools.com" target="_blank">Blueberry!</a> </td>
-  </tr>
-  <tr>
-    <td>Orange</td>
-    <td><img src="https://images-na.ssl-images-amazon.com/images/I/81FzZyQsZ7L._SL1500_.jpg" alt="ye"></td>
-    <td>$3</td>
-    <td>I was lazy to type so here is sample text<br>Buy it now link below</td>
-    <td><a href="https://www.amazon.de/ARISTOS-Apfelsinen-unbehandelt-Saftorangen-griechische/dp/B01MQJ2QFN/ref=sr_1_14?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=orange&qid=1601903438&sr=8-14" target="_blank">orange!</a> </td>
-  </tr>
-  <tr>
-    <td>Apple</td>
-    <td><img src="https://i.redd.it/rwml5skbnak51.jpg" alt="kindathicc"></td>
-    <td>$1400</td>
-    <td>an Apple from Apple<br>Buy it now link below</td>
-    <td><a href="https://www.amazon.de/Apple-MacBook-dual-core-Prozessor-10-Generation/dp/B0863ZJ1T3/ref=sr_1_11?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=macbook+pro&qid=1601903514&quartzVehicle=184-492&replacementKeywords=macbook&sr=8-11" target="_blank">air!</a> </td>
-  </tr>
-</table>
-
         Each product should have one image, title, description and price
         EX4.:
-
-
-
         Add Map to the shop 
         EX5.: 
         Add the links to Amazon products for each item in the table
         EX6.: completed in ex.3
         Add a footer with the address and the name of the shop
         EX7.: 
-         <footer>
-  <p>Author: John doe</p>
-  <p><a href="mailto:yayeet@yeeet.com">yayeet@yeeet.com</a></p>
-</footer>
         Add a message board where the user can type a message in it (only client side)
         // EXTRA 
         EX8.: 
@@ -159,12 +105,21 @@
 
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
+  <input type="text" id="fname" name="fname" placeholder="Your Name"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Your Last Name"><br><br>
   <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email" value=""><br><br>
+  <input type="text" id="email" name="email" placeholder="Your E-Mail"><br><br>
+  <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Write us a message"
+              ></textarea>
   <input type="submit" value="Submit" onclick="clicked(event)">
+  
+  
 </form> 
 
   <script>
