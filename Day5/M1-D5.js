@@ -368,6 +368,12 @@ function halfTree(h) {
 
 halfTree(2);
 
+function halfTree0(num) {
+  for (let i = 0; i < num; i++) {
+    console.log("*".repeat(i + 1));
+  }
+}
+halfTree(3);
 /* Ex.22 
   Create a function Tree that receives the height and creates an "*" tree with that height
   Example: 
@@ -391,6 +397,15 @@ function Tree(h) {
 
 Tree(2);
 
+function Tree0(h0) {
+  let space = " ";
+  let char = "*";
+
+  for (let i = 1; i < n + 1; i++) {
+    console.log(space.repeat(n - i) + char.repeat(i * 2 - 1));
+  }
+}
+Tree0(3);
 /* Ex.23
   Create a function IsItPrime that receives a number and return true if the number is a prime number
 */
