@@ -56,6 +56,21 @@ function getTasksAsArray() {
                onchange event listener ad applies it as background to every list item
             */
 
+function changeTaskBackgroundColor() {
+  let color = document.getElementById("#colorPicker").value;
+  document.getElementsByTagName("main")[0].style.backgroundColor = color;
+}
+
+/*
+            let colorValue;
+            let testB = function(){
+                let colorValueHold = document.querySelector("#colorPicker").value;
+                colorValue = colorValueHold;
+            };
+            window.addEventListener("DOMContentLoaded", function) {
+                document.querySelector("#colorPicker").addEventListener("change", colorGrab)
+            }
+*/
 /* EXTRA */
 
 /* EXERCISE 10: 
@@ -67,3 +82,23 @@ function getTasksAsArray() {
                - Break the code into many function for semplicity 
                - Reuse the functions previously created
             */
+function bubblesort() {
+  //I create an array with task converted in tasks
+  getTasksAsArray();
+  //I sort the array in alphabetical order
+  arrayTask.sort();
+  //I replace each li item with the text coming from the sorted array of tasks
+  while (taskList.firstChild) {
+    taskList.removeChild(taskList.firstChild);
+  }
+
+  for (let i = 0; i < arrayTask.length; i++) {
+    let li = document.createElement("li");
+    li.innerHTML = arrayTask[i];
+    li.className = "task-list__item";
+
+    taskList.appendChild(li);
+    // listTasks[i].innerText = arrayTask[i]
+  }
+  arrayTask = [];
+}
