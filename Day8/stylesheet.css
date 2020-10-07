@@ -1,0 +1,23 @@
+/* EXERCISE 2: Create a CSS class for the task list with a diverse
+    background Create a CSS class for the task list item with a border, a bold
+    text and a bigger font size Style every button of the page to be bigger */
+
+input[type="button"] {
+  width: 200px;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+}
+input[type="button"]:active {
+  background-color: #636463;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.taskList {
+  background-color: beige;
+  border: 3px solid red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
