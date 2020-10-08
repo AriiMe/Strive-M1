@@ -43,7 +43,6 @@ function removeFirst() {
             */
 function getTasksAsArray() {
   let liArray = document.querySelectorAll("li");
-  let newArray = [];
 
   for (let i = 0; i < liArray.length; i++) {
     newArray = newArray.join(" ");
@@ -57,12 +56,19 @@ function getTasksAsArray() {
             */
 
 function changeTaskBackgroundColor() {
+  let color = document.querySelector("#colorPicker");
+  let list = document.getElementsByTagName("li");
+  for (i = 0; i < list.length; i++) list[i].style.backgroundColor = color.value;
+  console.log(list);
+}
+/*
+function changeTaskBackgroundColor() {
   let color = document.getElementById("colorPicker").value;
   //document.getElementsByTagName("body")[0].style.backgroundColor = color;
   document.querySelectorAll("#myTaskList li")[0].style.backgroundColor =
     "#000000";
 }
-
+*/
 /*
 function changeTaskBackgroundColor() {
   let color = document.getElementById("#colorPicker").value;

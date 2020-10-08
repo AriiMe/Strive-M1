@@ -1,0 +1,96 @@
+body {
+  font-family: "Comic Neue";
+  font-size: 22px;
+  font-weight: 400;
+  color: whitesmoke;
+
+  background-image: url("https://i.pinimg.com/originals/48/50/01/485001c125237da534aa314a1ee0fd29.gif");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+#tabella {
+  justify-self: center;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: repeat(10, 90px);
+  text-align: center;
+  font-size: 2rem;
+  justify-content: stretch;
+}
+
+span {
+  padding: 7px;
+  border: solid 1px cyan;
+  margin: 14px;
+  background: red;
+  width: 40px;
+  height: 40px;
+  transition: all 1s ease;
+}
+
+span:hover {
+  cursor: pointer;
+}
+.extracted-number {
+  text-align: center;
+  margin-top: 80px;
+  background-image: url(https://bizzybeepestcontrol.com/wp-content/uploads/2016/07/large-win-gif.gif);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+
+.reset {
+  align-self: end;
+  font-size: 1.5rem;
+  display: grid;
+  width: 150px;
+  height: 150px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background: lightgreen;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  grid-column: 2;
+  grid-row: 1;
+}
+.estrai-numero {
+  text-align: center;
+  font-size: 2rem;
+  width: 200px;
+  height: 200px;
+  color: indianred;
+  padding: 20px;
+  border-radius: 50%;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 1px 2px 6px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.estrai-numero:hover,
+.reset:hover {
+  cursor: pointer;
+}
+
+.estrai-numero:active,
+.reset:active {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
+  transform: scale(0.9);
+}
