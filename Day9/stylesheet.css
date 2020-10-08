@@ -13,7 +13,7 @@ body {
   grid-template-columns: 75% 25%;
 }
 
-#tabella {
+#table {
   justify-self: center;
   grid-column: 1;
   display: grid;
@@ -36,12 +36,9 @@ span {
 span:hover {
   cursor: pointer;
 }
-.extracted-number {
+.random-number {
   text-align: center;
   margin-top: 80px;
-  background-image: url(https://bizzybeepestcontrol.com/wp-content/uploads/2016/07/large-win-gif.gif);
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent;
   font-size: 6rem;
   grid-column: 2;
   grid-row: 1;
@@ -66,7 +63,7 @@ span:hover {
   grid-column: 2;
   grid-row: 1;
 }
-.estrai-numero {
+.extracted-number {
   text-align: center;
   font-size: 2rem;
   width: 200px;
@@ -84,12 +81,12 @@ span:hover {
   grid-row: 1;
 }
 
-.estrai-numero:hover,
+.random-number:hover,
 .reset:hover {
   cursor: pointer;
 }
 
-.estrai-numero:active,
+.random-number:active,
 .reset:active {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
   transform: scale(0.9);
