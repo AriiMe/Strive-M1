@@ -57,10 +57,16 @@ function getTasksAsArray() {
             */
 
 function changeTaskBackgroundColor() {
+  let color = document.getElementById("colorPicker").value;
+  document.getElementsByTagName("body")[0].style.backgroundColor = color;
+}
+
+/*
+function changeTaskBackgroundColor() {
   let color = document.getElementById("#colorPicker").value;
   document.getElementsByTagName("main")[0].style.backgroundColor = color;
 }
-
+*/
 /*
             let colorValue;
             let testB = function(){
