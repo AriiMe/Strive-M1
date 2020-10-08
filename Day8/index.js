@@ -58,7 +58,9 @@ function getTasksAsArray() {
 
 function changeTaskBackgroundColor() {
   let color = document.getElementById("colorPicker").value;
-  document.getElementsByTagName("body")[0].style.backgroundColor = color;
+  //document.getElementsByTagName("body")[0].style.backgroundColor = color;
+  document.querySelectorAll("#myTaskList li")[0].style.backgroundColor =
+    "#000000";
 }
 
 /*
