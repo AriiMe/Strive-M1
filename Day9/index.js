@@ -31,6 +31,9 @@ for (let i = 1; i <= 76; i++){
   cell.style.backgroundColor = 'orange'
   cell.classList.add('bingoCell')
 
+
+  board.style.display = "flex";
+  board.style.flexWrap = "wrap";
   cell.innerText = i
 
   board.appendChild(cell)
