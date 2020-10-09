@@ -5,6 +5,14 @@ const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
 let scoreCounter = (document = document.getElementById("score"));
 
+/*
+let score = 0;
+function drawScore() {
+  ctx.font = "12px Arial";
+  ctx.fillStyle = "#0095DD";
+  ctx.fillText("Score: " + score, 8, 20);
+}
+*/
 let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener("click", startGame);
@@ -15,7 +23,7 @@ nextButton.addEventListener("click", () => {
 
 function scoreCounting() {
   const scoreArray = document.createElement([]);
-  if (question == correct.answer) {
+  if (answer == correct) {
     scoreCounter++;
   } else {
     startButton.classList.remove("hide");
@@ -189,7 +197,7 @@ const questions = [
     difficulty: "easy",
     question: "In web design, what does CSS stand for?",
     answers: [
-      { text: "Counter Strike: Source", correct: false },
+      { text: "Counter Strike: Source", correct: true },
       { text: "Corrective Style Sheet", correct: false },
       { text: "Computer Style Sheet", correct: false },
       { text: "Cascading Style Sheet", correct: true },
@@ -243,6 +251,18 @@ const questions = [
       { text: "C", correct: false },
       { text: "Java", correct: true },
       { text: "Jakarta", correct: false },
+    ],
+  },
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "easy",
+    question: "is ari dumb?",
+    answers: [
+      { text: "Yes", correct: true },
+      { text: "yes", correct: true },
+      { text: "HELL YEAH", correct: true },
+      { text: "of course", correct: true },
     ],
   },
 ];
